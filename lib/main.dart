@@ -14,7 +14,7 @@ class CupertinoWidgets extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: CupertinoThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.black54,
+        scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
         primaryColor: CupertinoColors.systemOrange,
       ),
       home: CupertinoPageScaffold(
@@ -24,7 +24,7 @@ class CupertinoWidgets extends StatelessWidget {
         child: Center(
           child: Icon(
             CupertinoIcons.shield_fill,
-            size: 35,
+            size: 60,
           ),
         ),
       ),
