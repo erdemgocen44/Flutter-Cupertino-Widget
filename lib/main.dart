@@ -17,7 +17,17 @@ class CupertinoWidgets extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black54,
         primaryColor: CupertinoColors.systemOrange,
       ),
-      home: Text('Flutter Cupertino Widgets'),
+      home: CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          middle: Text('Flutter Cupertino Widgets'),
+        ),
+        child: Center(
+          child: Icon(
+            CupertinoIcons.shield_fill,
+            size: 35,
+          ),
+        ),
+      ),
     );
   }
 }
