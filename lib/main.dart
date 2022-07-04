@@ -12,6 +12,12 @@ class CupertinoWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CupertinoApp(
       debugShowCheckedModeBanner: false,
+      theme: CupertinoThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Colors.black54,
+        primaryColor: CupertinoColors.systemOrange,
+      ),
+      home: Text('Flutter Cupertino Widgets'),
     );
   }
 }
