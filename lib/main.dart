@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_cupertino_widgets/starting_page.dart';
 
 void main() {
   runApp(const CupertinoWidgets());
@@ -17,17 +18,7 @@ class CupertinoWidgets extends StatelessWidget {
         scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
         primaryColor: CupertinoColors.systemOrange,
       ),
-      home: CupertinoPageScaffold(
-        navigationBar: CupertinoNavigationBar(
-          middle: Text('Flutter Cupertino Widgets'),
-        ),
-        child: Center(
-          child: Icon(
-            CupertinoIcons.shield_fill,
-            size: 60,
-          ),
-        ),
-      ),
+      home: StartingPage(),
     );
   }
 }
