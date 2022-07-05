@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 List<Widget> buttons = [
   CustomElevatedButton(
-    yazi: 'Clippers',
+    yazi: 'scaffold',
     primary: Colors.amber,
     onprimary: Colors.black,
-    rota: '/clippers',
+    rota: '/scaffold',
   ),
 ];

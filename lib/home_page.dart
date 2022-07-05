@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Widgets'),
+          title: const Text('Flutter Cupertino Widgets'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
