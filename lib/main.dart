@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter_cupertino_widgets/home_page.dart';
+import 'package:flutter_cupertino_widgets/rotes.dart';
 import 'package:flutter_cupertino_widgets/starting_page.dart';
 
 void main() {
@@ -11,14 +12,15 @@ class CupertinoWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
+    return CupertinoApp(
       debugShowCheckedModeBanner: false,
-      theme: CupertinoThemeData(
+      theme: const CupertinoThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
         primaryColor: CupertinoColors.systemOrange,
       ),
-      home: StartingPage(),
+      home: HomePage(),
+      routes: rotalar,
     );
   }
 }
