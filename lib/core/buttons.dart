@@ -1,4 +1,4 @@
-import 'package:flutter_cupertino_widgets/custom_elevated_button.dart';
+import 'package:flutter_cupertino_widgets/core/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 List<Widget> buttons = [

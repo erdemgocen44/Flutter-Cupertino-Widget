@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cupertino_widgets/buttons.dart';
+import 'package:flutter_cupertino_widgets/core/buttons.dart';
 
 void main() => runApp(HomePage());
 

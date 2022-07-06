@@ -7,19 +7,22 @@ class StartingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CupertinoApp(
-      debugShowCheckedModeBanner: false,
-      theme: CupertinoThemeData(
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
-        primaryColor: CupertinoColors.systemOrange,
-      ),
-      home: Text(
-        'Flutter Cupertino Widgets',
-        style: TextStyle(
-          fontSize: 15,
+        debugShowCheckedModeBanner: false,
+        theme: CupertinoThemeData(
+          brightness: Brightness.dark,
+          scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
+          primaryColor: CupertinoColors.systemOrange,
         ),
-        textAlign: TextAlign.center,
-      ),
-    );
+        home: CupertinoPageScaffold(
+            navigationBar: CupertinoNavigationBar(
+              //Appbarın yaptığı görevi yapıyor
+              middle: Text('CupertinoPageScaffold'),
+            ),
+            child: Center(
+              child: Icon(
+                CupertinoIcons.eject,
+                size: 65,
+              ),
+            )));
   }
 }
