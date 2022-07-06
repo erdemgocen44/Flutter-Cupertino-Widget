@@ -12,21 +12,22 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Cupertino Widgets'),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: GridView(
-            primary: false,
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              mainAxisSpacing: 4,
-              crossAxisSpacing: 4,
-              childAspectRatio: 2,
-            ),
-            children: buttons,
+      appBar: AppBar(
+        title: const Text('Flutter Cupertino Widgets'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GridView(
+          primary: false,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            mainAxisSpacing: 4,
+            crossAxisSpacing: 4,
+            childAspectRatio: 2,
           ),
-        ));
+          children: buttons,
+        ),
+      ),
+    );
   }
 }
