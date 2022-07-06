@@ -14,6 +14,11 @@ class CupertinoWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+        primaryColor: CupertinoColors.systemOrange,
+      ),
       home: HomePage(),
       routes: rotalar,
     );
