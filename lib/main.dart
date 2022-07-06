@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_cupertino_widgets/home_page.dart';
 import 'package:flutter_cupertino_widgets/rotes.dart';
-import 'package:flutter_cupertino_widgets/starting_page.dart';
 
 void main() {
-  runApp(const CupertinoWidgets());
+  runApp(CupertinoWidgets());
 }
 
 class CupertinoWidgets extends StatelessWidget {
@@ -12,13 +12,8 @@ class CupertinoWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: const CupertinoThemeData(
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
-        primaryColor: CupertinoColors.systemOrange,
-      ),
       home: HomePage(),
       routes: rotalar,
     );
