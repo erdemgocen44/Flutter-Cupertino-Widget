@@ -10,10 +10,18 @@ class ActionSheetActionHome extends StatefulWidget {
 class _ActionSheetActionHomeState extends State<ActionSheetActionHome> {
   @override
   Widget build(BuildContext context) {
-    return const CupertinoPageScaffold(
+    return CupertinoPageScaffold(
       //Scaffold görevi yapar
 
-      child: Center(),
+      child: Center(
+        child: CupertinoButton(
+            child: const Text('CupertinoActionSheetAction'),
+            onPressed: () {
+              showCupertinoModalPopup(
+                  context: context,
+                  builder: (BuildContext context) => CupertinoActionSheet());
+            }),
+      ),
     );
   }
 }
