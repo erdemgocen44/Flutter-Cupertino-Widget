@@ -4,7 +4,7 @@ import 'package:flutter_cupertino_widgets/home_page.dart';
 import 'package:flutter_cupertino_widgets/rotes.dart';
 
 void main() {
-  runApp(CupertinoWidgets());
+  runApp(const CupertinoWidgets());
 }
 
 class CupertinoWidgets extends StatelessWidget {

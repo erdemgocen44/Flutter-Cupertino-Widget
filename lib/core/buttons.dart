@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 List<Widget> buttons = [
   CustomElevatedButton(
-    yazi: 'Scaffold',
+    yazi: 'CupertinoApp',
     primary: Colors.amber,
     onprimary: Colors.black,
     rota: '/scaffold',

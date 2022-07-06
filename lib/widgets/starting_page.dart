@@ -13,7 +13,13 @@ class StartingPage extends StatelessWidget {
         scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
         primaryColor: CupertinoColors.systemOrange,
       ),
-      home: Text('Flutter Cupertino Widgets'),
+      home: Text(
+        'Flutter Cupertino Widgets',
+        style: TextStyle(
+          fontSize: 15,
+        ),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
