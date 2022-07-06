@@ -8,4 +8,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/scaffold',
   ),
+  CustomElevatedButton(
+    yazi: 'ActionSheet',
+    primary: Colors.amberAccent,
+    onprimary: Colors.white,
+    rota: '/actionsheet',
+  ),
 ];

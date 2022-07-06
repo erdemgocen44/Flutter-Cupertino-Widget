@@ -24,10 +24,17 @@ class _ActionSheetActionHomeState extends State<ActionSheetActionHome> {
                   message: const Text('Erdem GÖÇEN '),
                   actions: <CupertinoActionSheetAction>[
                     CupertinoActionSheetAction(
-                        onPressed: (() {
-                          Navigator.pop(context);
-                        }),
-                        child: const Text('Change is good!!'))
+                      onPressed: (() {
+                        Navigator.pop(context);
+                      }),
+                      child: const Text('Change is good!!'),
+                    ),
+                    CupertinoActionSheetAction(
+                      onPressed: (() {
+                        Navigator.pop(context);
+                      }),
+                      child: const Text('Change is better good!!'),
+                    ),
                   ],
                 ),
               );
