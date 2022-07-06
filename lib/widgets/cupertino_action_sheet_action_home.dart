@@ -18,8 +18,19 @@ class _ActionSheetActionHomeState extends State<ActionSheetActionHome> {
             child: const Text('CupertinoActionSheetAction'),
             onPressed: () {
               showCupertinoModalPopup(
-                  context: context,
-                  builder: (BuildContext context) => CupertinoActionSheet());
+                context: context,
+                builder: (BuildContext context) => const CupertinoActionSheet(
+                  title: Text('CupertinoActionSheetAction'),
+                  message: Text('Erdem GÖÇEN '),
+                  actions: <CupertinoActionSheetAction>[
+                    CupertinoActionSheetAction(
+                        onPressed: (() {
+                          Navigator.pop(context);
+                        }),
+                        child: Text('Change is good!!'))
+                  ],
+                ),
+              );
             }),
       ),
     );
