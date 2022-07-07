@@ -13,24 +13,32 @@ class _AlertDialogHomeState extends State<AlertDialogHome> {
     return CupertinoPageScaffold(
       child: Center(
         child: CupertinoButton(
-            child: const Text('Cupertino Alert Dialog'),
-            onPressed: () {
-              showCupertinoDialog<void>(
-                  context: context,
-                  builder: (BuildContext context) => const CupertinoAlertDialog(
-                        title: Text('Alarmmm!!'),
-                        content: Text('Super ALARMMMMMM!!!!'),
-                        actions: <CupertinoDialogAction>[
-                          CupertinoDialogAction(
-                            child: Text('Noooooooo!!'),
-                            isDestructiveAction: true,
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                          ),
-                        ],
-                      ));
-            }),
+          child: const Text('Cupertino Alert Dialog'),
+          onPressed: () {
+            showCupertinoDialog<void>(
+              context: context,
+              builder: (BuildContext context) => CupertinoAlertDialog(
+                title: const Text('Alarmmm!!'),
+                content: const Text('Super ALARMMMMMM!!!!'),
+                actions: <CupertinoDialogAction>[
+                  CupertinoDialogAction(
+                    child: const Text('Noo!!'),
+                    isDestructiveAction: true,
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  CupertinoDialogAction(
+                    child: Text('Yes :)'),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  )
+                ],
+              ),
+            );
+          },
+        ),
       ),
     );
   }
