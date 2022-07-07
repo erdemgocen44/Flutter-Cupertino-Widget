@@ -15,9 +15,9 @@ List<Widget> buttons = [
     rota: '/actionsheet',
   ),
   CustomElevatedButton(
-    yazi: 'ActivityIndicator',
-    primary: Colors.amberAccent,
-    onprimary: Colors.white,
+    yazi: 'Activity Indicator',
+    primary: Colors.blue,
+    onprimary: Colors.black,
     rota: '/activity',
   ),
 ];
