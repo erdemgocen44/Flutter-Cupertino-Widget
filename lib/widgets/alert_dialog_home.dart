@@ -11,7 +11,27 @@ class _AlertDialogHomeState extends State<AlertDialogHome> {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      child: Center(),
+      child: Center(
+        child: CupertinoButton(
+            child: const Text('Cupertino Alert Dialog'),
+            onPressed: () {
+              showCupertinoDialog<void>(
+                  context: context,
+                  builder: (BuildContext context) => const CupertinoAlertDialog(
+                        title: Text('Alarmmm!!'),
+                        content: Text('Super ALARMMMMMM!!!!'),
+                        actions: <CupertinoDialogAction>[
+                          CupertinoDialogAction(
+                            child: Text('Noooooooo!!'),
+                            isDestructiveAction: true,
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                        ],
+                      ));
+            }),
+      ),
     );
   }
 }
