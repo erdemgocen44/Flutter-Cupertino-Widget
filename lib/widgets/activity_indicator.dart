@@ -10,6 +10,10 @@ class ActivityIndicatorHome extends StatefulWidget {
 class _ActivityIndicatorHomeState extends State<ActivityIndicatorHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const CupertinoPageScaffold(
+      child: Center(
+        child: CupertinoActivityIndicator(),
+      ),
+    );
   }
 }
