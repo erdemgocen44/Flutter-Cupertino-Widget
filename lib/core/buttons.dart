@@ -21,6 +21,12 @@ List<Widget> buttons = [
     rota: '/activity',
   ),
   CustomElevatedButton(
+    yazi: 'Button',
+    primary: Colors.blueAccent,
+    onprimary: Colors.white,
+    rota: '/button',
+  ),
+  CustomElevatedButton(
     yazi: 'Alert Dialog',
     primary: Colors.black,
     onprimary: Colors.white,
