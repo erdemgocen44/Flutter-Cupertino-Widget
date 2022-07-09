@@ -10,6 +10,10 @@ class ButtonHome extends StatefulWidget {
 class _ButtonHomeState extends State<ButtonHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+      ),
+    );
   }
 }
