@@ -13,6 +13,12 @@ class _ButtonHomeState extends State<ButtonHome> {
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          CupertinoButton(
+            onPressed: () {},
+            child: const Text('Enabled'),
+          )
+        ],
       ),
     );
   }
