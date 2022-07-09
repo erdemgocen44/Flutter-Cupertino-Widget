@@ -17,7 +17,12 @@ class _ButtonHomeState extends State<ButtonHome> {
           CupertinoButton(
             onPressed: () {},
             child: const Text('Enabled'),
-          )
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          CupertinoButton.filled(
+              child: const Text('Work it'), onPressed: () {}),
         ],
       ),
     );
