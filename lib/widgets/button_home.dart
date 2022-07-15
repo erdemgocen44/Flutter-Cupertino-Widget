@@ -16,13 +16,13 @@ class _ButtonHomeState extends State<ButtonHome> {
         children: <Widget>[
           CupertinoButton(
             onPressed: () {},
-            child: const Text('Enabled'),
+            child: const Text('Enabled :)'),
           ),
           const SizedBox(
             height: 30,
           ),
           CupertinoButton.filled(
-              child: const Text('Work it'), onPressed: () {}),
+              child: const Text('Work it!!'), onPressed: () {},),
         ],
       ),
     );
