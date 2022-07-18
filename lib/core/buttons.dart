@@ -32,4 +32,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/alert',
   ),
+  CustomElevatedButton(
+    yazi: 'Context Menu',
+    primary: Colors.blueGrey,
+    onprimary: Colors.black,
+    rota: '/context',
+  ),
 ];
