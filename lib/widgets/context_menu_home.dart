@@ -16,8 +16,8 @@ class _ContextMenuHomeState extends State<ContextMenuHome> {
     return Scaffold(
       body: Center(
         child: SizedBox(
-          height: 100,
-          width: 100,
+          height: MediaQuery.of(context).size.height * 0.3,
+          width: MediaQuery.of(context).size.width * 0.3,
           child: CupertinoContextMenu(
             child: Image.asset('assets/images/tube.png'),
             actions: <Widget>[
