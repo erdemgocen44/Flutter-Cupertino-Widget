@@ -14,7 +14,12 @@ class _ContextMenuHomeState extends State<ContextMenuHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(),
+      body: Center(
+        child: SizedBox(
+          height: MediaQuery.of(context).size.height * 0.3,
+          width: MediaQuery.of(context).size.width * 0.3,
+        ),
+      ),
     );
   }
 }
