@@ -29,13 +29,19 @@ List<Widget> buttons = [
   CustomElevatedButton(
     yazi: 'Alert Dialog',
     primary: Colors.black,
-    onprimary: Colors.white,
+    onprimary: Colors.black,
     rota: '/alert',
   ),
   CustomElevatedButton(
     yazi: 'Context Menu',
     primary: Colors.blueGrey,
-    onprimary: Colors.black,
+    onprimary: Colors.white,
     rota: '/context',
+  ),
+  CustomElevatedButton(
+    yazi: 'DateTime Picker',
+    primary: Colors.brown,
+    onprimary: Colors.white,
+    rota: '/date',
   ),
 ];
