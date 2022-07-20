@@ -28,7 +28,7 @@ List<Widget> buttons = [
   ),
   CustomElevatedButton(
     yazi: 'Alert Dialog',
-    primary: Colors.black,
+    primary: Colors.brown,
     onprimary: Colors.black,
     rota: '/alert',
   ),
@@ -40,8 +40,8 @@ List<Widget> buttons = [
   ),
   CustomElevatedButton(
     yazi: 'DateTime Picker',
-    primary: Colors.brown,
-    onprimary: Colors.white,
+    primary: Colors.black,
+    onprimary: Colors.black,
     rota: '/date',
   ),
 ];
