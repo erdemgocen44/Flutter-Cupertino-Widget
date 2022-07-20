@@ -12,6 +12,17 @@ class _DatePickerHomeState extends State<DatePickerHome> {
   DateTime dateTime = DateTime(3001, 2, 2, 11, 25);
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return CupertinoPageScaffold(
+      child: Center(
+        child: CupertinoButton.filled(
+            child: const Text('cupertino DatePicker Widget'),
+            onPressed: () {
+              showCupertinoModalPopup(
+                  context: context,
+                  builder: (BuildContext context) => SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.3));
+            }),
+      ),
+    );
   }
 }
