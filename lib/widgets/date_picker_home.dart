@@ -18,9 +18,20 @@ class _DatePickerHomeState extends State<DatePickerHome> {
             child: const Text('cupertino DatePicker Widget'),
             onPressed: () {
               showCupertinoModalPopup(
-                  context: context,
-                  builder: (BuildContext context) => SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.3));
+                context: context,
+                builder: (BuildContext context) => SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.3,
+                  child: CupertinoDatePicker(
+                    backgroundColor: Colors.white,
+                    initialDateTime: dateTime,
+                    onDateTimeChanged: (DateTime newTime) {
+                      setState(() {
+                        dateTime = newTime;
+                      });
+                    },
+                  ),
+                ),
+              );
             }),
       ),
     );
