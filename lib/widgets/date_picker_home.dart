@@ -29,6 +29,8 @@ class _DatePickerHomeState extends State<DatePickerHome> {
                         dateTime = newTime;
                       });
                     },
+                    use24hFormat: true,
+                    mode: CupertinoDatePickerMode.time,
                   ),
                 ),
               );
