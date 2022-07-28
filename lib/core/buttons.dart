@@ -44,4 +44,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/date',
   ),
+  CustomElevatedButton(
+    yazi: 'Page Route',
+    primary: Colors.brown,
+    onprimary: Colors.white,
+    rota: '/date',
+  ),
 ];
