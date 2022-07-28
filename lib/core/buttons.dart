@@ -48,6 +48,6 @@ List<Widget> buttons = [
     yazi: 'Page Route',
     primary: Colors.brown,
     onprimary: Colors.white,
-    rota: '/date',
+    rota: '/route',
   ),
 ];
