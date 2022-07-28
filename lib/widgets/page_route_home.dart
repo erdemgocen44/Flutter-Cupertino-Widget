@@ -23,6 +23,9 @@ class PageTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.blueGrey,
+      body: Center(
+        child: Text('Page Two'),
+      ),
     );
   }
 }
