@@ -12,6 +12,17 @@ class PageRouteHome extends StatefulWidget {
 class _PageRouteHomeState extends State<PageRouteHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(child: ,);
+  }
+}
+
+class PageTwo extends StatelessWidget {
+  const PageTwo({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      backgroundColor: Colors.blueGrey,
+    );
   }
 }
