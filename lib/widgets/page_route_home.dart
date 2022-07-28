@@ -16,13 +16,17 @@ class _PageRouteHomeState extends State<PageRouteHome> {
       backgroundColor: Colors.white10,
       body: Center(
         child: CupertinoButton.filled(
-            child: const Text('Go Page 2'),
-            onPressed: () {
-              Navigator.of(context)
-                  .push(CupertinoPageRoute(builder: (BuildContext context) {
-                return const PageTwo();
-              }));
-            }),
+          child: const Text('Go Page 2'),
+          onPressed: () {
+            Navigator.of(context).push(
+              CupertinoPageRoute(
+                builder: (BuildContext context) {
+                  return const PageTwo();
+                },
+              ),
+            );
+          },
+        ),
       ),
     );
   }
