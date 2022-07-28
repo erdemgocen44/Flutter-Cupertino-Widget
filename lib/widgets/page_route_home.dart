@@ -13,13 +13,14 @@ class _PageRouteHomeState extends State<PageRouteHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white10,
       body: Center(
         child: CupertinoButton.filled(
             child: const Text('Go Page 2'),
             onPressed: () {
               Navigator.of(context)
                   .push(CupertinoPageRoute(builder: (BuildContext context) {
-                return PageTwo();
+                return const PageTwo();
               }));
             }),
       ),
