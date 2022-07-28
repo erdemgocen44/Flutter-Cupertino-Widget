@@ -12,15 +12,17 @@ class PageRouteHome extends StatefulWidget {
 class _PageRouteHomeState extends State<PageRouteHome> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: CupertinoButton.filled(
-          child: const Text('Go Page 2'),
-          onPressed: () {
-            Navigator.of(context)
-                .push(CupertinoPageRoute(builder: (BuildContext context) {
-              return PageTwo();
-            }));
-          }),
+    return Scaffold(
+      body: Center(
+        child: CupertinoButton.filled(
+            child: const Text('Go Page 2'),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(CupertinoPageRoute(builder: (BuildContext context) {
+                return PageTwo();
+              }));
+            }),
+      ),
     );
   }
 }

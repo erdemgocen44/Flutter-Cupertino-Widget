@@ -39,15 +39,15 @@ List<Widget> buttons = [
     rota: '/context',
   ),
   CustomElevatedButton(
-    yazi: 'DateTime Picker',
-    primary: Colors.black,
+    yazi: 'Page Route',
+    primary: Colors.cyan,
     onprimary: Colors.black,
-    rota: '/date',
+    rota: '/route',
   ),
   CustomElevatedButton(
-    yazi: 'Page Route',
-    primary: Colors.brown,
+    yazi: 'DateTime Picker',
+    primary: Colors.black,
     onprimary: Colors.white,
-    rota: '/route',
+    rota: '/date',
   ),
 ];
