@@ -14,13 +14,13 @@ class _PageScaffoldHomeState extends State<PageScaffoldHome> {
     return CupertinoPageScaffold(
       backgroundColor: const Color.fromARGB(255, 18, 17, 17),
       navigationBar: CupertinoNavigationBar(
-        backgroundColor: CupertinoColors.systemGrey.withOpacity(0.5),
+        backgroundColor: CupertinoColors.systemGrey.withOpacity(0.3),
         middle: const Text('Erdem GÖÇEN'),
       ),
       child: Stack(
         children: [
           Image.network(
-            "https://picsum.photos/300/400",
+            "https://api.lorem.space/image?w=500&h=800",
             fit: BoxFit.cover,
             height: double.infinity,
           ),
