@@ -11,6 +11,9 @@ class PageScaffoldHome extends StatefulWidget {
 class _PageScaffoldHomeState extends State<PageScaffoldHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return CupertinoPageScaffold(
+      backgroundColor: const Color.fromARGB(255, 18, 17, 17),
+      child: Stack(),
+    );
   }
 }
