@@ -50,4 +50,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/date',
   ),
+  CustomElevatedButton(
+    yazi: 'Page Scaffold',
+    primary: Colors.cyan,
+    onprimary: Colors.black,
+    rota: '/pagescaffold',
+  ),
 ];
