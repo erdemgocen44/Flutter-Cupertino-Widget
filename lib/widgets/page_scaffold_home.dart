@@ -17,7 +17,15 @@ class _PageScaffoldHomeState extends State<PageScaffoldHome> {
         backgroundColor: CupertinoColors.systemGrey.withOpacity(0.5),
         middle: const Text('Erdem GÖÇEN'),
       ),
-      child: Stack(),
+      child: Stack(
+        children: [
+          Image.network(
+            "https://picsum.photos/300/400",
+            fit: BoxFit.cover,
+            height: double.infinity,
+          ),
+        ],
+      ),
     );
   }
 }

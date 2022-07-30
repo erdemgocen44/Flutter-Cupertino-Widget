@@ -52,7 +52,7 @@ List<Widget> buttons = [
   ),
   CustomElevatedButton(
     yazi: 'Page Scaffold',
-    primary: Colors.cyan,
+    primary: Colors.deepOrange,
     onprimary: Colors.black,
     rota: '/pagescaffold',
   ),
