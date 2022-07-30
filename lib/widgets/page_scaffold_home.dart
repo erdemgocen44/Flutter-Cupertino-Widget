@@ -13,6 +13,9 @@ class _PageScaffoldHomeState extends State<PageScaffoldHome> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       backgroundColor: const Color.fromARGB(255, 18, 17, 17),
+      navigationBar: CupertinoNavigationBar(
+        backgroundColor: CupertinoColors.systemGrey.withOpacity(0.5),
+      ),
       child: Stack(),
     );
   }
