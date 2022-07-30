@@ -15,6 +15,7 @@ class _PageScaffoldHomeState extends State<PageScaffoldHome> {
       backgroundColor: const Color.fromARGB(255, 18, 17, 17),
       navigationBar: CupertinoNavigationBar(
         backgroundColor: CupertinoColors.systemGrey.withOpacity(0.5),
+        middle: const Text('Erdem GÖÇEN'),
       ),
       child: Stack(),
     );
