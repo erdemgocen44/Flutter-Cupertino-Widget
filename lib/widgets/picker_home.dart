@@ -15,7 +15,16 @@ class _PickerHomeState extends State<PickerHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Center(),
+        child: Center(
+          child: CupertinoButton.filled(
+              child: Text('Value=$_selectValue'),
+              onPressed: () => showCupertinoModalPopup(
+                    context: context,
+                    builder: (_) => SizedBox(
+                        width: double.infinity,
+                        height: MediaQuery.of(context).size.height * 0.3),
+                  )),
+        ),
       ),
     );
   }
