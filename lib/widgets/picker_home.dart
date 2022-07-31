@@ -17,13 +17,21 @@ class _PickerHomeState extends State<PickerHome> {
       body: SafeArea(
         child: Center(
           child: CupertinoButton.filled(
-              child: Text('Value=$_selectValue'),
-              onPressed: () => showCupertinoModalPopup(
-                    context: context,
-                    builder: (_) => SizedBox(
-                        width: double.infinity,
-                        height: MediaQuery.of(context).size.height * 0.3),
-                  )),
+            child: Text('Value=$_selectValue'),
+            onPressed: () => showCupertinoModalPopup(
+              context: context,
+              builder: (_) => SizedBox(
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height * 0.3,
+                child: CupertinoPicker(
+                    backgroundColor: Colors.white,
+                    itemExtent: 30,
+                    scrollController: FixedExtentScrollController(),
+                    onSelectedItemChanged: (int value) {},
+                    children: const []),
+              ),
+            ),
+          ),
         ),
       ),
     );
