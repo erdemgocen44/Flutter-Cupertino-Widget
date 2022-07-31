@@ -56,4 +56,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/pagescaffold',
   ),
+  CustomElevatedButton(
+    yazi: 'Picker',
+    primary: Colors.deepOrangeAccent,
+    onprimary: Colors.white,
+    rota: '/picker',
+  ),
 ];

@@ -7,6 +7,7 @@ import 'package:flutter_cupertino_widgets/widgets/cupertino_action_sheet_action_
 import 'package:flutter_cupertino_widgets/widgets/date_picker_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/page_route_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/page_scaffold_home.dart';
+import 'package:flutter_cupertino_widgets/widgets/picker_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/starting_page.dart';
 
 var rotalar = <String, WidgetBuilder>{
@@ -19,4 +20,5 @@ var rotalar = <String, WidgetBuilder>{
   "/date": (context) => const DatePickerHome(),
   "/route": (context) => const PageRouteHome(),
   "/pagescaffold": (context) => const PageScaffoldHome(),
+  "/picker": (context) => const PickerHome(),
 };
