@@ -22,13 +22,22 @@ class _PickerHomeState extends State<PickerHome> {
               context: context,
               builder: (_) => SizedBox(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.3,
+                height: MediaQuery.of(context).size.height * 0.4,
                 child: CupertinoPicker(
                     backgroundColor: Colors.white,
                     itemExtent: 30,
-                    scrollController: FixedExtentScrollController(),
-                    onSelectedItemChanged: (int value) {},
-                    children: const []),
+                    scrollController:
+                        FixedExtentScrollController(initialItem: 1),
+                    onSelectedItemChanged: (int value) {
+                      setState(() {
+                        _selectValue = value;
+                      });
+                    },
+                    children: const [
+                      Text('0'),
+                      Text('1'),
+                      Text('2'),
+                    ]),
               ),
             ),
           ),
