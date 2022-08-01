@@ -45,10 +45,10 @@ List<Widget> buttons = [
     rota: '/route',
   ),
   CustomElevatedButton(
-    yazi: 'DateTime Picker',
-    primary: Colors.black,
-    onprimary: Colors.white,
-    rota: '/date',
+    yazi: 'Picker',
+    primary: Colors.deepOrangeAccent,
+    onprimary: Colors.black,
+    rota: '/picker',
   ),
   CustomElevatedButton(
     yazi: 'Page Scaffold',
@@ -57,15 +57,15 @@ List<Widget> buttons = [
     rota: '/pagescaffold',
   ),
   CustomElevatedButton(
-    yazi: 'Picker',
-    primary: Colors.deepOrangeAccent,
-    onprimary: Colors.white,
-    rota: '/picker',
-  ),
-  CustomElevatedButton(
     yazi: 'Popup Surface',
     primary: Colors.deepPurple,
-    onprimary: Colors.black,
+    onprimary: Colors.white,
     rota: '/popup',
+  ),
+  CustomElevatedButton(
+    yazi: 'DateTime Picker',
+    primary: Colors.black,
+    onprimary: Colors.white,
+    rota: '/date',
   ),
 ];
