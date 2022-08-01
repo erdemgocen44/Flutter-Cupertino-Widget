@@ -26,7 +26,13 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
                       width: double.infinity,
                       height: MediaQuery.of(context).size.height * 0.4,
                       child: CupertinoButton(
-                          child: const Text('Close'),
+                          child: const Text(
+                            'Close',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontSize: 25,
+                            ),
+                          ),
                           onPressed: () {
                             Navigator.of(context).pop();
                           }),
