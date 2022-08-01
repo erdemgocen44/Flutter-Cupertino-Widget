@@ -13,7 +13,15 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
         child: Center(
-      child: CupertinoButton(child: Text('Click Me!!'), onPressed: onPressed),
+      child: CupertinoButton(
+          child: const Text('Click Me!!'),
+          onPressed: () {
+            showCupertinoModalPopup(
+                context: context,
+                builder: (BuildContext builder) {
+                  return CupertinoPopupSurface();
+                });
+          }),
     ));
   }
 }
