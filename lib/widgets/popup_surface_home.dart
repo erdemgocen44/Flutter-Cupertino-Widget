@@ -11,6 +11,9 @@ class PopupSurfaceHome extends StatefulWidget {
 class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return CupertinoPageScaffold(
+        child: Center(
+      child: CupertinoButton(child: Text('Click Me!!'), onPressed: onPressed),
+    ));
   }
 }
