@@ -33,7 +33,7 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
                       height: MediaQuery.of(context).size.height * 0.5,
                       child: CupertinoButton(
                           child: const Text(
-                            'Close',
+                            '>Close<',
                             style: TextStyle(
                               color: Colors.redAccent,
                               fontSize: 25,
