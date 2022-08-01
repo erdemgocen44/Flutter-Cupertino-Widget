@@ -62,4 +62,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/picker',
   ),
+  CustomElevatedButton(
+    yazi: 'Popup Surface',
+    primary: Colors.deepPurple,
+    onprimary: Colors.black,
+    rota: '/popup',
+  ),
 ];
