@@ -14,7 +14,13 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
     return CupertinoPageScaffold(
         child: Center(
       child: CupertinoButton(
-          child: const Text('Click Me!!'),
+          child: const Text(
+            'Click Me!!',
+            style: TextStyle(
+              color: Colors.blueAccent,
+              fontSize: 25,
+            ),
+          ),
           onPressed: () {
             showCupertinoModalPopup(
                 context: context,
@@ -24,7 +30,7 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
                       color: CupertinoColors.white,
                       alignment: Alignment.center,
                       width: double.infinity,
-                      height: MediaQuery.of(context).size.height * 0.4,
+                      height: MediaQuery.of(context).size.height * 0.5,
                       child: CupertinoButton(
                           child: const Text(
                             'Close',
