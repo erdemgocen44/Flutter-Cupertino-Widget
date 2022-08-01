@@ -19,7 +19,14 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
             showCupertinoModalPopup(
                 context: context,
                 builder: (BuildContext builder) {
-                  return CupertinoPopupSurface();
+                  return CupertinoPopupSurface(
+                    child: Container(
+                      color: CupertinoColors.white,
+                      alignment: Alignment.center,
+                      width: double.infinity,
+                      height: MediaQuery.of(context).size.height * 0.4,
+                    ),
+                  );
                 });
           }),
     ));
