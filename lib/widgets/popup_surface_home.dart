@@ -25,6 +25,11 @@ class _PopupSurfaceHomeState extends State<PopupSurfaceHome> {
                       alignment: Alignment.center,
                       width: double.infinity,
                       height: MediaQuery.of(context).size.height * 0.4,
+                      child: CupertinoButton(
+                          child: const Text('Close'),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          }),
                     ),
                   );
                 });
