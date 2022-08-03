@@ -47,7 +47,7 @@ List<Widget> buttons = [
   CustomElevatedButton(
     yazi: 'Picker',
     primary: Colors.deepOrangeAccent,
-    onprimary: Colors.black,
+    onprimary: Colors.white,
     rota: '/picker',
   ),
   CustomElevatedButton(
