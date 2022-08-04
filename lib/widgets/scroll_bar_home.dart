@@ -20,7 +20,7 @@ class _ScrollBarHomeState extends State<ScrollBarHome> {
               '$index',
               style: const TextStyle(
                   fontSize: 30,
-                  color: Colors.blueAccent,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
           );
