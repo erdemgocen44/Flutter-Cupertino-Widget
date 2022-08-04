@@ -12,18 +12,24 @@ class _ScrollBarHomeState extends State<ScrollBarHome> {
   @override
   Widget build(BuildContext context) {
     return CupertinoScrollbar(
-        child: ListView.builder(
-            itemCount: 150,
-            itemBuilder: (BuildContext context, int index) {
-              return Center(
-                child: Text(
-                  '$index',
-                  style: const TextStyle(
-                      fontSize: 30,
-                      color: Colors.blueAccent,
-                      fontWeight: FontWeight.bold),
-                ),
-              );
-            }));
+      child: ListView.builder(
+        itemCount: 150,
+        itemBuilder: (BuildContext context, int index) {
+          return Center(
+            child: Text(
+              '$index',
+              style: const TextStyle(
+                  fontSize: 30,
+                  color: Colors.blueAccent,
+                  fontWeight: FontWeight.bold),
+            ),
+          );
+        },
+      ),
+      thickness: 6.0,
+      thicknessWhileDragging: 10.0,
+      radius: const Radius.circular(34.0),
+      radiusWhileDragging: Radius.zero,
+    );
   }
 }
