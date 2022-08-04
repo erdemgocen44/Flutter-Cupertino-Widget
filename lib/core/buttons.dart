@@ -63,15 +63,15 @@ List<Widget> buttons = [
     rota: '/popup',
   ),
   CustomElevatedButton(
+    yazi: 'Scroll Bar',
+    primary: Colors.deepPurpleAccent,
+    onprimary: Colors.black,
+    rota: '/scroll',
+  ),
+  CustomElevatedButton(
     yazi: 'DateTime Picker',
     primary: Colors.black,
     onprimary: Colors.white,
     rota: '/date',
-  ),
-  CustomElevatedButton(
-    yazi: 'Scroll Bar',
-    primary: Colors.green,
-    onprimary: Colors.black,
-    rota: '/scroll',
   ),
 ];

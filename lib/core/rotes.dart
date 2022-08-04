@@ -9,6 +9,7 @@ import 'package:flutter_cupertino_widgets/widgets/page_route_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/page_scaffold_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/picker_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/popup_surface_home.dart';
+import 'package:flutter_cupertino_widgets/widgets/scroll_bar_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/starting_page.dart';
 
 var rotalar = <String, WidgetBuilder>{
@@ -23,4 +24,5 @@ var rotalar = <String, WidgetBuilder>{
   "/pagescaffold": (context) => const PageScaffoldHome(),
   "/picker": (context) => const PickerHome(),
   "/popup": (context) => const PopupSurfaceHome(),
+  "/scroll": (context) => const ScrollBarHome(),
 };
