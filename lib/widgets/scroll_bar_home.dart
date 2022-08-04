@@ -11,6 +11,19 @@ class ScrollBarHome extends StatefulWidget {
 class _ScrollBarHomeState extends State<ScrollBarHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return CupertinoScrollbar(
+        child: ListView.builder(
+            itemCount: 150,
+            itemBuilder: (BuildContext context, int index) {
+              return Center(
+                child: Text(
+                  '$index',
+                  style: const TextStyle(
+                      fontSize: 30,
+                      color: Colors.blueAccent,
+                      fontWeight: FontWeight.bold),
+                ),
+              );
+            }));
   }
 }
