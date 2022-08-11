@@ -19,7 +19,9 @@ class _SearchTextFieldHomeState extends State<SearchTextFieldHome> {
       color: CupertinoColors.systemYellow,
       padding: const EdgeInsets.all(10.0),
       child: Center(
-        child: CupertinoSearchTextField(),
+        child: CupertinoSearchTextField(
+          controller: _textController,
+        ),
       ),
     );
   }
