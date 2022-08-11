@@ -10,6 +10,9 @@ class SearchTextFieldHome extends StatefulWidget {
 }
 
 class _SearchTextFieldHomeState extends State<SearchTextFieldHome> {
+  final TextEditingController _textController =
+      TextEditingController(text: 'Erdem GÖÇEN');
+
   @override
   Widget build(BuildContext context) {
     return Container();
