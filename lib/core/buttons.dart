@@ -75,7 +75,7 @@ List<Widget> buttons = [
     rota: '/date',
   ),
   CustomElevatedButton(
-    yazi: 'DateTime Picker',
+    yazi: 'Search Text Field',
     primary: Colors.green,
     onprimary: Colors.black,
     rota: '/search',
