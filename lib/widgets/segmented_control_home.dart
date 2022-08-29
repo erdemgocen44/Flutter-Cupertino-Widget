@@ -23,7 +23,14 @@ class _SegmentedControlledHomeState extends State<SegmentedControlledHome> {
           ),
           CupertinoSegmentedControl(
             children: {
-              'Flutter': Container(),
+              'Flutter': Container(
+                color: _currentText == 'Flutter'
+                    ? Colors.orangeAccent
+                    : Colors.white60,
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                child: const Text('Flutter'),
+              ),
               'Erdem': Container(),
               'GÖÇEN': Container(),
             },
