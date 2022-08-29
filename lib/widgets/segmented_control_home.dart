@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,16 +22,31 @@ class _SegmentedControlledHomeState extends State<SegmentedControlledHome> {
             height: MediaQuery.of(context).size.height * 0.25,
           ),
           CupertinoSegmentedControl(
-              children: {
-                'Flutter': Container(),
-                'Erdem': Container(),
-                'GÖÇEN': Container(),
-              },
-              onValueChanged: (String value) {
-                setState(() {
+            children: {
+              'Flutter': Container(),
+              'Erdem': Container(),
+              'GÖÇEN': Container(),
+            },
+            onValueChanged: (String value) {
+              setState(
+                () {
                   _currentText = value;
-                });
-              })
+                },
+              );
+            },
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.25,
+          ),
+          _currentText != null
+              ? Text(
+                  _currentText!,
+                  style: const TextStyle(
+                    fontSize: 50,
+                    color: Colors.red,
+                  ),
+                )
+              : Container(),
         ],
       ),
     );
