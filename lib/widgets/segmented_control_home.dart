@@ -13,6 +13,25 @@ class _SegmentedControlledHomeState extends State<SegmentedControlledHome> {
   String? _currentText;
   @override
   Widget build(BuildContext context) {
-    return Center();
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.25,
+          ),
+          CupertinoSegmentedControl(
+              children: {
+                'Flutter': Container(),
+                'Erdem': Container(),
+                'GÖÇEN': Container(),
+              },
+              onValueChanged: (String value) {
+                setState(() {
+                  _currentText = value;
+                });
+              })
+        ],
+      ),
+    );
   }
 }
