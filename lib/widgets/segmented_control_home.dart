@@ -31,8 +31,22 @@ class _SegmentedControlledHomeState extends State<SegmentedControlledHome> {
                 padding: const EdgeInsets.all(8),
                 child: const Text('Flutter'),
               ),
-              'Erdem': Container(),
-              'GÖÇEN': Container(),
+              'Erdem': Container(
+                color: _currentText == 'Erdem'
+                    ? Colors.orangeAccent
+                    : Colors.white60,
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                child: const Text('Erdem'),
+              ),
+              'GÖÇEN': Container(
+                color: _currentText == 'GÖÇEN'
+                    ? Colors.orangeAccent
+                    : Colors.white60,
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                child: const Text('GÖÇEN'),
+              ),
             },
             onValueChanged: (String value) {
               setState(

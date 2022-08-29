@@ -80,4 +80,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/search',
   ),
+  CustomElevatedButton(
+    yazi: 'Segmented Controlled',
+    primary: Colors.greenAccent,
+    onprimary: Colors.white,
+    rota: '/search',
+  ),
 ];
