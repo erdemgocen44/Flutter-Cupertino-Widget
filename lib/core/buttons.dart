@@ -84,6 +84,6 @@ List<Widget> buttons = [
     yazi: 'Segmented Controlled',
     primary: Colors.greenAccent,
     onprimary: Colors.white,
-    rota: '/search',
+    rota: '/segmend',
   ),
 ];
