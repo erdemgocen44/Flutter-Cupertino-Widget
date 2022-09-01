@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -22,7 +24,12 @@ class _SliderHomeState extends State<SliderHome> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(height: 50),
-          Text(_currentValue.toString()),
+          Text(
+            _currentValue.toString(),
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
           const SizedBox(height: 50),
           CupertinoSlider(
               max: 10,
