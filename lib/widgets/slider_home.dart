@@ -17,33 +17,37 @@ class _SliderHomeState extends State<SliderHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SizedBox(
-      width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SizedBox(height: MediaQuery.of(context).size.height * 0.10),
-          Text(
-            _currentValue.toString(),
-            style: const TextStyle(
-              fontSize: 30,
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: MediaQuery.of(context).size.height * 0.10),
+            Text(
+              _currentValue.toString(),
+              style: const TextStyle(
+                fontSize: 30,
+              ),
             ),
-          ),
-          SizedBox(height: MediaQuery.of(context).size.height * 0.05),
-          CupertinoSlider(
+            SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+            CupertinoSlider(
               thumbColor: Colors.blueAccent,
               max: 10,
               min: 0,
               divisions: 10,
               value: _currentValue,
               onChanged: (selectedValue) {
-                setState(() {
-                  _currentValue = selectedValue;
-                });
-              })
-        ],
+                setState(
+                  () {
+                    _currentValue = selectedValue;
+                  },
+                );
+              },
+            )
+          ],
+        ),
       ),
-    ));
+    );
   }
 }
