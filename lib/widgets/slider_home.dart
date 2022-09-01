@@ -23,15 +23,16 @@ class _SliderHomeState extends State<SliderHome> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SizedBox(height: 50),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.10),
           Text(
             _currentValue.toString(),
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 30,
             ),
           ),
-          const SizedBox(height: 50),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.05),
           CupertinoSlider(
+              thumbColor: Colors.blueAccent,
               max: 10,
               min: 0,
               divisions: 10,
