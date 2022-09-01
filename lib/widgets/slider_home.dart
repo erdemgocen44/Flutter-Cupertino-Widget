@@ -23,6 +23,13 @@ class _SliderHomeState extends State<SliderHome> {
             height: MediaQuery.of(context).size.height * 0.5,
           ),
           Text(_currentValue.toString()),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.5,
+          ),CupertinoSlider(max: 10,min: 0,divisions: 10, value: _currentValue, onChanged: (selectedValue ){
+            setState(() {
+              _currentValue=selectedValue
+            });
+          })
         ],
       ),
     ));
