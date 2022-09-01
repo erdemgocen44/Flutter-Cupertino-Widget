@@ -18,14 +18,12 @@ class _SliderHomeState extends State<SliderHome> {
         body: SizedBox(
       width: double.infinity,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 50
-          ),
+          const SizedBox(height: 50),
           Text(_currentValue.toString()),
-          SizedBox(
-            height: 50
-          ),
+          const SizedBox(height: 50),
           CupertinoSlider(
               max: 10,
               min: 0,
