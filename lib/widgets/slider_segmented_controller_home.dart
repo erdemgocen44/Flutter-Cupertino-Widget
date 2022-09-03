@@ -16,8 +16,12 @@ class _SliderSegmentedControllerHomeState extends State<SliderSegmentedControlle
     return Scaffold(
       body: Center(
         child: CupertinoSlidingSegmentedControl(children: const {
-          
-        }, onValueChanged: onValueChanged),
+          0:Text('Erdem'),1:Text('GÖÇEN'),2:Text('Flutter'),
+        },groupValue: _sliding, onValueChanged: (int? newValue){
+          setState(() {
+            _sliding=newValue;
+          });
+        }),
       ),
     )
   }
