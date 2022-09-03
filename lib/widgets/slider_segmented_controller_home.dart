@@ -10,10 +10,15 @@ class SliderSegmentedControllerHome extends StatefulWidget {
 }
 
 class _SliderSegmentedControllerHomeState extends State<SliderSegmentedControllerHome> {
+  int? _sliding=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: Center(
+        child: CupertinoSlidingSegmentedControl(children: const {
+          
+        }, onValueChanged: onValueChanged),
+      ),
     )
   }
 }
