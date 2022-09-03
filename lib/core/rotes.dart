@@ -13,6 +13,7 @@ import 'package:flutter_cupertino_widgets/widgets/scroll_bar_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/search_text_field_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/segmented_control_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/slider_home.dart';
+import 'package:flutter_cupertino_widgets/widgets/slider_segmented_controller_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/starting_page.dart';
 
 var rotalar = <String, WidgetBuilder>{
@@ -31,4 +32,5 @@ var rotalar = <String, WidgetBuilder>{
   "/search": (context) => const SearchTextFieldHome(),
   "/segmend": (context) => const SegmentedControlledHome(),
   "/slider": (context) => const SliderHome(),
+  "/slidersegment": (context) => const SliderSegmentedControllerHome(),
 };
