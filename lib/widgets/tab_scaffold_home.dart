@@ -22,7 +22,16 @@ class _TabScaffoldHomeState extends State<TabScaffoldHome> {
         ],
       ),
       tabBuilder: (BuildContext context, int index) {
-        return CupertinoTabView();
+        return CupertinoTabView(
+          builder: (BuildContext context) {
+            return Center(
+              child: Icon(
+                index == 0 ? CupertinoIcons.home : CupertinoIcons.settings,
+                size: 85,
+              ),
+            );
+          },
+        );
       },
     );
   }
