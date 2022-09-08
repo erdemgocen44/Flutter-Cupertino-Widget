@@ -9,8 +9,18 @@ class SwitchHome extends StatefulWidget {
 }
 
 class _SwitchHomeState extends State<SwitchHome> {
+  bool _light = false;
   @override
   Widget build(BuildContext context) {
-    
+    return Center(
+      child: CupertinoSwitch(
+        value: _light,
+        onChanged: (bool value) {
+          setState(() {
+            _light = value;
+          });
+        },
+      ),
+    );
   }
 }

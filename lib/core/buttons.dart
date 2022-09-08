@@ -98,4 +98,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/slidersegment',
   ),
+  CustomElevatedButton(
+    yazi: 'Switch',
+    primary: Colors.indigoAccent,
+    onprimary: Colors.black,
+    rota: '/switch',
+  ),
 ];

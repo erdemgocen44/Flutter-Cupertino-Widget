@@ -15,6 +15,7 @@ import 'package:flutter_cupertino_widgets/widgets/segmented_control_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/slider_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/slider_segmented_controller_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/starting_page.dart';
+import 'package:flutter_cupertino_widgets/widgets/switch_home.dart';
 
 var rotalar = <String, WidgetBuilder>{
   "/scaffold": (context) => const StartingPage(),
@@ -33,4 +34,5 @@ var rotalar = <String, WidgetBuilder>{
   "/segmend": (context) => const SegmentedControlledHome(),
   "/slider": (context) => const SliderHome(),
   "/slidersegment": (context) => const SliderSegmentedControllerHome(),
+  "/switch": (context) => const SwitchHome(),
 };
