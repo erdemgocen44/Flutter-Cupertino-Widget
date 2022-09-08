@@ -14,6 +14,7 @@ class _SwitchHomeState extends State<SwitchHome> {
   Widget build(BuildContext context) {
     return Center(
       child: CupertinoSwitch(
+        trackColor: Colors.red,
         thumbColor: Colors.grey,
         activeColor: Colors.amber,
         value: _light,

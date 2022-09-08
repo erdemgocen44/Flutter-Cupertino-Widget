@@ -104,4 +104,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/switch',
   ),
+  CustomElevatedButton(
+    yazi: 'Tab Scaffold',
+    primary: Colors.lightBlue,
+    onprimary: Colors.white,
+    rota: '/tab',
+  ),
 ];
