@@ -12,8 +12,18 @@ class TabScaffoldHome extends StatefulWidget {
 class _TabScaffoldHomeState extends State<TabScaffoldHome> {
   @override
   Widget build(BuildContext context) {
-    return CupertinoTabScaffold(tabBar: CupertinoTabBar(items: const <BottomNavigationBarItem>[
-      BottomNavigationBarItem(icon: Icon(CupertinoIcons.home))
-    ]), tabBuilder: tabBuilder)
+    return CupertinoTabScaffold(
+      tabBar: CupertinoTabBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.home), label: 'HOME'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.settings), label: 'SETTINGS'),
+        ],
+      ),
+      tabBuilder: (BuildContext context, int index) {
+        return CupertinoTabView();
+      },
+    );
   }
 }
