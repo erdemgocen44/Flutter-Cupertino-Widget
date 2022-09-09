@@ -116,4 +116,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/tabbar',
   ),
+  CustomElevatedButton(
+    yazi: 'Tab View',
+    primary: Colors.lightGreen,
+    onprimary: Colors.white,
+    rota: '/tabview',
+  ),
 ];

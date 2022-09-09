@@ -18,6 +18,7 @@ import 'package:flutter_cupertino_widgets/widgets/starting_page.dart';
 import 'package:flutter_cupertino_widgets/widgets/switch_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/tab_bar_home.dart';
 import 'package:flutter_cupertino_widgets/widgets/tab_scaffold_home.dart';
+import 'package:flutter_cupertino_widgets/widgets/tab_view_home.dart';
 
 var rotalar = <String, WidgetBuilder>{
   "/scaffold": (context) => const StartingPage(),
@@ -39,4 +40,5 @@ var rotalar = <String, WidgetBuilder>{
   "/switch": (context) => const SwitchHome(),
   "/tab": (context) => const TabScaffoldHome(),
   "/tabbar": (context) => const TabBarHome(),
+  "/tabview": (context) => const TabViewHome(),
 };
