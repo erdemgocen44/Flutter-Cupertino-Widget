@@ -11,5 +11,21 @@ class TabViewHome extends StatefulWidget {
 
 class _TabViewHomeState extends State<TabViewHome> {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return CupertinoTabScaffold(
+      tabBar: CupertinoTabBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.home), label: 'HOME'),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.settings), label: 'SETTINGS'),
+        ],
+      ),
+      tabBuilder: (BuildContext context, int index) {
+        return CupertinoTabView(builder: (BuildContext context) {
+          return Center(child: ,);
+        });
+      },
+    );
+  }
 }
