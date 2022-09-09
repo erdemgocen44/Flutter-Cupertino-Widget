@@ -23,7 +23,12 @@ class _TabViewHomeState extends State<TabViewHome> {
       ),
       tabBuilder: (BuildContext context, int index) {
         return CupertinoTabView(builder: (BuildContext context) {
-          return Center(child: ,);
+          return Center(
+            child: Icon(
+              index == 0 ? CupertinoIcons.ant : CupertinoIcons.gauge,
+              size: 85,
+            ),
+          );
         });
       },
     );
