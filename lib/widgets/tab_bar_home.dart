@@ -20,7 +20,19 @@ class _TabBarHomeState extends State<TabBarHome> {
             size: 85,
           ),
         );
-      }, tabBar: CupertinoTabBar(items: const<),
+      },
+      tabBar: CupertinoTabBar(items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+            icon: Icon(
+              CupertinoIcons.home,
+            ),
+            label: 'Home'),
+        BottomNavigationBarItem(
+            icon: Icon(
+              CupertinoIcons.settings,
+            ),
+            label: 'Settings'),
+      ]),
     );
   }
 }
