@@ -12,6 +12,15 @@ class TabBarHome extends StatefulWidget {
 class _TabBarHomeState extends State<TabBarHome> {
   @override
   Widget build(BuildContext context) {
-    
+    return CupertinoTabScaffold(
+      tabBuilder: (BuildContext context, int index) {
+        return Center(
+          child: Icon(
+            index == 0 ? CupertinoIcons.hammer : CupertinoIcons.airplane,
+            size: 85,
+          ),
+        );
+      }, tabBar: CupertinoTabBar(items: const<),
+    );
   }
 }
